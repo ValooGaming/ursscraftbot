@@ -14,7 +14,7 @@ fs.readdir("./commands/", (err, f) => {
 
     commands.forEach((f) => {
         let command = require(`./commands/${f}`);
-        console.log(chalk.magenta(`${f} commande chargée !`));
+        console.log(chalk.magenta(`${f}, commande chargée !`));
 
         client.commands.set(command.help.name, command);
     });
@@ -25,7 +25,7 @@ fs.readdir("./events/", (error, f) => {
     console.log(chalk.cyan(`${f.length} events en chargement`));
   
     f.forEach((f) => {
-        const events = require(`./Events/${f}`);
+        const events = require(`./events/${f}`);
         const event = f.split(".")[0];
   
       client.on(event, events.bind(null, client));
