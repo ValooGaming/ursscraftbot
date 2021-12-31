@@ -23,6 +23,7 @@ module.exports.run = async (client, message, args) => {
     let e = new Discord.MessageEmbed()
     .setTitle("Nouveau giveaway !")
     .setDescription(`${message.author} a lancé un concours où le prix à gagner est : ${prize}`)
+    .addField("La liste des participants est : ", `${arr.join("\n")}`)
     .setTimestamp(Date.now()+ms(args[0]))
     .setColor("RED")
     channel.send(e)
