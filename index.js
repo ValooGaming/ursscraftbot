@@ -3,8 +3,17 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const chalk = require("chalk")
 const fs = require("fs");
+const mongoose = require("mongoose")
+
+console.log(Date.now())
 
 client.commands = new Discord.Collection();
+
+mongoose.connect(`mongodb+srv://valoogaming:${process.env.DATABASE}@cluster0.wrdaj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+  { useNewUrlParser: true,
+    useUnifiedTopology: true })
+  .then(() => console.log('Connexion à MongoDB réussie !'))
+  .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 fs.readdir("./commands/", (err, f) => {
     if (err) console.log(err);
