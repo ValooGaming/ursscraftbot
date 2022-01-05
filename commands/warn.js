@@ -30,8 +30,9 @@ module.exports.run = async (client, message, args) => {
         } else {
             Warns.findOne({id: member.id})
             .then(doc => Warns.updateOne({ _id: doc._id }, {
-                reason: `${doc.reason}\n${reason}`
+                $push: { reason: reason }
             }))
+
             message.channel.send(`**${member}** a été warn par **${message.author}** pour la raison : **${reason}**`)
         }
     })

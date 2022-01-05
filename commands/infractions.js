@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
     let member = message.mentions.members.first();
     if (!member) return message.channel.send("**Veuillez mentionner un membre.**");
     let lastWarns = await warns.find({id: member.id})
-    if (lastWarns.length) {
+    if (lastWarns.length && lastWarns[0].length !== 0) {
         let e = new MessageEmbed()
         .setAuthor(member.user.username, member.user.avatarURL())
         .addField("Liste des warns :", lastWarns[0].reason)
