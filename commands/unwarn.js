@@ -10,7 +10,10 @@ module.exports.run = async (client, message, args) => {
     if (warnsList.length) {
         warns.findOne({id: member.id})
         .then(doc => warns.updateOne({ _id: doc._id }, {
-            $pop: { reason: 1 }
+            $pop: { 
+                reason: 1,
+                date: 1
+             }
         }))
         message.channel.send(`Le dernier warn de **${member}** a été supprimé avec succès. Voici la nouvelle liste de warns de cet utilisateur : `)
         .then(async () => {
