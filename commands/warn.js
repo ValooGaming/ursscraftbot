@@ -1,7 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const Warns = require("../models/warns");
 const mongoose = require("mongoose");
-const res = require("express/lib/response");
 
 module.exports.run = async (client, message, args) => {
     if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("**Vous n'avez pas la permission !**");
