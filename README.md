@@ -7,7 +7,7 @@
 ## Installation
 
 > Le bot est **opensource** ! Vous pouvez cloner le repository librement, et utiliser le code à votre guise. 
-> Pour ce faire, cloner le repository à l'aide de **$git clone https://github.com/ValooGaming/ursscraftbot.git**, puis installer les modules nodejs à l'aide de **npm install**.
+> Pour ce faire, clonez le repository à l'aide de **$git clone https://github.com/ValooGaming/ursscraftbot.git**, puis installez les modules nodejs à l'aide de **npm install**.
 > La dernière chose à faire est de créer un fichier .env à la racine du bot et d'intégrer : 
 > TOKEN=votretoken
 > PREFIX = '*' (ou autre)
