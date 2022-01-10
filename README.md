@@ -16,4 +16,4 @@
 ## Note
 
 > Pour se connecter à MongoDb, il faut modifier le contenu du : 
-> mongoose.connect("") dans index.js, et mettre son propre lien et indentifiant. Vous pouvez utiliser ${process.env.DATABASE} pour camoufler votre mot de passe.
+> mongoose.connect("") dans index.js, et mettre son propre lien et identifiant. Vous pouvez utiliser ${process.env.DATABASE} pour camoufler votre mot de passe.
