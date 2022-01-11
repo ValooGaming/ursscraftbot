@@ -12,12 +12,12 @@
 <code>$git clone https://github.com/ValooGaming/ursscraftbot.git</code>
 
 > puis installez les modules nodejs à l'aide de **npm install**.
-> La dernière chose à faire est de créer un fichier <span style="color: grey">.env</span> à la racine du bot et d'intégrer : 
+> La dernière chose à faire est de créer un fichier .env à la racine du bot et d'intégrer : 
 
-<code>TOKEN=votretoken</code>
-<code>PREFIX = '*' (ou autre)</code>
-<code>DATABASE=passwordDbMongo</code>
-<code>STATUS_CHANNEL_ID=idDuChannelStatus</code>
+<code>TOKEN=votretoken</code><br>
+<code>PREFIX = '*' (ou autre)</code><br>
+<code>DATABASE=passwordDbMongo</code><br>
+<code>STATUS_CHANNEL_ID=idDuChannelStatus</code><br>
 
 ## Note
 
