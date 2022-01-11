@@ -1,13 +1,13 @@
 {
   "name": "urssbot",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "A discord bot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "valoogaming",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
